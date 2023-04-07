@@ -45,7 +45,7 @@ let db = null
 
 // Connect to MongoDB database
 async function main () {
-  const client = new MongoClient(`mongodb+srv://Yusuf:12345@cluster0.iiaahgn.mongodb.net'`)
+  const client = new MongoClient(`mongodb+srv://${username}:${password}@cluster0.iiaahgn.mongodb.net'`)
   try {
     await client.connect()
     db = client.db(dbName)
